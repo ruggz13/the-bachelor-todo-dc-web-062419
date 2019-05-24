@@ -4,8 +4,7 @@ def get_first_name_of_season_winner(data, season)
   data.each do |season, attributes|
     if attributes == "status".downcase == "winner"
       return attributes["name"].split(" ").first
-
-
+    end
   end
 end
 
