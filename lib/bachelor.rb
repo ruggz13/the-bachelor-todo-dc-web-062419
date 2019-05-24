@@ -3,7 +3,7 @@ def get_first_name_of_season_winner(data, season)
   # code here
   data[season].each do |contestant_hash|
     if contestant_hash["status"].downcase == "winner"
-      return attributes["name"].split(" ").first
+      return contestant_hash["name"].split(" ").first
     end
   end
 end
